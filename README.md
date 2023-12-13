@@ -44,8 +44,8 @@ The widgets have been tested with the ArcGIS Maps SDK for JavaScript version 4.2
 
 ### FPView
 ![demo](/fpview.gif)
-1. [Building Scene Layer]("building-scene-layer-slice.html") - The FPView widget has been added to this Esri [sample](https://developers.arcgis.com/javascript/latest/sample-code/building-scene-layer-slice/). This lets you walk into the building to get a first person perspective of the interior.
-1. [Integrated Mesh Layer]("layers-integratedmeshlayer.html") - The FPView widget has been added to this Esri [sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-integratedmeshlayer/). The ground parameter is set to true which prevents the use from walking through the integrated mesh when in first person view.
+1. [Building Scene Layer](https://highered-esricanada.github.io/JS-Maps-SDK-Widgets/building-scene-layer-slice.html) - The FPView widget has been added to this Esri [sample](https://developers.arcgis.com/javascript/latest/sample-code/building-scene-layer-slice/). This lets you walk into the building to get a first person perspective of the interior.
+1. [Integrated Mesh Layer](https://highered-esricanada.github.io/JS-Maps-SDK-Widgets/layers-integratedmeshlayer.html) - The FPView widget has been added to this Esri [sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-integratedmeshlayer/). The ground parameter is set to true which prevents the use from walking through the integrated mesh when in first person view.
 
 | Argument Name | Type | Description |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ The widgets have been tested with the ArcGIS Maps SDK for JavaScript version 4.2
 
 ### PerfView
 ![demo](/perfview.gif)
-1.[Building Scene Layer]("building-scene-layer-slice.html") - The PerView widget has been added to this [sample](https://developers.arcgis.com/javascript/latest/sample-code/sceneview-memory/) from where the code to calculate memory usage. The arguments are as follows:
+1.[Sceneview Memory](https://highered-esricanada.github.io/JS-Maps-SDK-Widgets/sceneview-memory.html) - The PerView widget has been added to this [sample](https://developers.arcgis.com/javascript/latest/sample-code/sceneview-memory/) from where the code to calculate memory usage. The arguments are as follows:
 
 | Argument Name | Type | Description |
 | --- | --- | --- |
