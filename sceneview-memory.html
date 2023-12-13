@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>SceneView memory resources | Sample | ArcGIS Maps SDK for JavaScript 4.28</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+
+    <script type="text/javascript">
+        var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
+        var dojoConfig = {
+          packages: [
+            {
+                name: "localWidget",
+                location: locationPath
+            }
+          ]
+        };
+  
+      </script>
+
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <script>
+      require(["esri/WebScene", "esri/views/SceneView", "localWidget/PerfView"], (WebScene, SceneView, PerfView) => {
+        const webscene = new WebScene({
+          portalItem: {
+            id: "1e2765e700774e5b809d5bbd768be6a0"
+          }
+        });
+
+        // create the SceneView
+        const view = new SceneView({
+          container: "viewDiv",
+          map: webscene,
+          highlightOptions: {
+            haloOpacity: 0
+          }
+        });
+        view.ui.empty("top-left");
+        let fps = new PerfView({view: view, position:"top-left", transparent:true, minimal:false});
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv">
+    </div>
+  </body>
+</html>
